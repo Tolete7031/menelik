@@ -2,7 +2,7 @@
 
 This issue tracker is only for technical issues related to Menelik Core.
 
-General Menelik questions and/or support requests and are best directed to the [Menelik Discord](https://discord.com/invite/2T8xG7e).
+General Menelik questions and/or support requests and are best directed to the [Menelik Discord](https://discord.gg/YD7BWYgT).
 
 To report critical security issues, DM the Core or Developer Teams instead of creating Github issues.
 
