@@ -1,0 +1,6 @@
+usr/local/bin/menelik-qt usr/bin
+share/pixmaps/menelik32.xpm usr/share/pixmaps
+share/pixmaps/menelik16.xpm usr/share/pixmaps
+share/pixmaps/menelik128.png usr/share/pixmaps
+debian/menelik-qt.desktop usr/share/applications
+debian/menelik-qt.protocol usr/share/kde4/services/

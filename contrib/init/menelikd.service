@@ -1,0 +1,22 @@
+[Unit]
+Description=Menelik's distributed currency daemon
+After=network.target
+
+[Service]
+User=menelikcore
+Group=menelikcore
+
+Type=forking
+PIDFile=/var/lib/menelikd/menelikd.pid
+ExecStart=/usr/bin/menelikd -daemon -pid=/var/lib/menelikd/menelikd.pid \
+-conf=/etc/menelikcore/menelik.conf -datadir=/var/lib/menelikd -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,11 @@
+[Protocol]
+exec=menelik-qt '%u'
+protocol=menelik
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

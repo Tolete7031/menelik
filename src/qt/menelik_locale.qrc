@@ -1,0 +1,25 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="ar">locale/menelik_ar.qm</file>
+        <file alias="bg">locale/menelik_bg.qm</file>
+        <file alias="de">locale/menelik_de.qm</file>
+        <file alias="en">locale/menelik_en.qm</file>
+        <file alias="es">locale/menelik_es.qm</file>
+        <file alias="fi">locale/menelik_fi.qm</file>
+        <file alias="fr">locale/menelik_fr.qm</file>
+        <file alias="it">locale/menelik_it.qm</file>
+        <file alias="ja">locale/menelik_ja.qm</file>
+        <file alias="ko">locale/menelik_ko.qm</file>
+        <file alias="nl">locale/menelik_nl.qm</file>
+        <file alias="pl">locale/menelik_pl.qm</file>
+        <file alias="pt">locale/menelik_pt.qm</file>
+        <file alias="ro">locale/menelik_ro.qm</file>
+        <file alias="ru">locale/menelik_ru.qm</file>
+        <file alias="sk">locale/menelik_sk.qm</file>
+        <file alias="th">locale/menelik_th.qm</file>
+        <file alias="tr">locale/menelik_tr.qm</file>
+        <file alias="vi">locale/menelik_vi.qm</file>
+        <file alias="zh_CN">locale/menelik_zh_CN.qm</file>
+        <file alias="zh_TW">locale/menelik_zh_TW.qm</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Menelik Core
+Comment=Menelik P2P Cryptocurrency
+Comment[de]=Verbinde mit dem Menelik peer-to-peer Netzwerk
+Comment[fr]=Menelik, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Menelik, eşten eşe kriptografik sanal para birimi
+Exec=menelik-qt %u
+Terminal=false
+Type=Application
+Icon=menelik128
+MimeType=x-scheme-handler/menelik;
+Categories=Office;Finance;

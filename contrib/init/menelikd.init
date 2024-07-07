@@ -1,0 +1,67 @@
+#!/usr/bin/env bash
+#
+#  menelikd The Menelik Core server.
+#
+#
+# chkconfig: 345 80 20
+# description: menelikd
+# processname: menelikd
+#
+
+# Source function library.
+. /etc/init.d/functions
+
+# you can override defaults in /etc/sysconfig/menelikd, see below
+if [ -f /etc/sysconfig/menelikd ]; then
+        . /etc/sysconfig/menelikd
+fi
+
+RETVAL=0
+
+prog=menelikd
+# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/menelikd
+lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/menelikd}
+
+# menelikd defaults to /usr/bin/menelikd, override with BITCOIND_BIN
+menelikd=${BITCOIND_BIN-/usr/bin/menelikd}
+
+# menelikd opts default to -disablewallet, override with BITCOIND_OPTS
+menelikd_opts=${BITCOIND_OPTS--disablewallet}
+
+start() {
+    echo -n $"Starting $prog: "
+    daemon $DAEMONOPTS $menelikd $menelikd_opts
+    RETVAL=$?
+    echo
+    [ $RETVAL -eq 0 ] && touch $lockfile
+    return $RETVAL
+}
+
+stop() {
+    echo -n $"Stopping $prog: "
+    killproc $prog
+    RETVAL=$?
+    echo
+    [ $RETVAL -eq 0 ] && rm -f $lockfile
+    return $RETVAL
+}
+
+case "$1" in
+    start)
+        start
+        ;;
+    stop)
+        stop
+        ;;
+    status)
+        status $prog
+        ;;
+    restart)
+        stop
+        start
+        ;;
+    *)
+        echo "Usage: service $prog {start|stop|status|restart}"
+        exit 1
+        ;;
+esac
