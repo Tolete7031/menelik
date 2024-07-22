@@ -21,9 +21,9 @@ BitcoinUnits::BitcoinUnits(QObject *parent):
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(MENIL);
-    unitlist.append(mMENIL);
-    unitlist.append(uMENIL);
+    unitlist.append(MENEL);
+    unitlist.append(mMENEL);
+    unitlist.append(uMENEL);
     unitlist.append(ruffs);
     return unitlist;
 }
@@ -32,9 +32,9 @@ bool BitcoinUnits::valid(int unit)
 {
     switch(unit)
     {
-    case MENIL:
-    case mMENIL:
-    case uMENIL:
+    case MENEL:
+    case mMENEL:
+    case uMENEL:
     case ruffs:
         return true;
     default:
@@ -48,9 +48,9 @@ QString BitcoinUnits::name(int unit)
     {
         switch(unit)
         {
-            case MENIL: return QString("MENIL");
-            case mMENIL: return QString("mMENIL");
-            case uMENIL: return QString::fromUtf8("μMENIL");
+            case MENEL: return QString("MENEL");
+            case mMENEL: return QString("mMENEL");
+            case uMENEL: return QString::fromUtf8("μMENEL");
             case ruffs: return QString("ruffs");
             default: return QString("???");
         }
@@ -59,9 +59,9 @@ QString BitcoinUnits::name(int unit)
     {
         switch(unit)
         {
-            case MENIL: return QString("tMENIL");
-            case mMENIL: return QString("mtMENIL");
-            case uMENIL: return QString::fromUtf8("μtMENIL");
+            case MENEL: return QString("tMENEL");
+            case mMENEL: return QString("mtMENEL");
+            case uMENEL: return QString::fromUtf8("μtMENEL");
             case ruffs: return QString("truffs");
             default: return QString("???");
         }
@@ -74,9 +74,9 @@ QString BitcoinUnits::description(int unit)
     {
         switch(unit)
         {
-            case MENIL: return QString("Menelik");
-            case mMENIL: return QString("Milli-Menelik (1 / 1" THIN_SP_UTF8 "000)");
-            case uMENIL: return QString("Micro-Menelik (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case MENEL: return QString("Menelik");
+            case mMENEL: return QString("Milli-Menelik (1 / 1" THIN_SP_UTF8 "000)");
+            case uMENEL: return QString("Micro-Menelik (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
             case ruffs: return QString("Ten Nano-Menelik (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
             default: return QString("???");
         }
@@ -85,9 +85,9 @@ QString BitcoinUnits::description(int unit)
     {
         switch(unit)
         {
-            case MENIL: return QString("TestMeneliks");
-            case mMENIL: return QString("Milli-TestMenelik (1 / 1" THIN_SP_UTF8 "000)");
-            case uMENIL: return QString("Micro-TestMenelik (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case MENEL: return QString("TestMeneliks");
+            case mMENEL: return QString("Milli-TestMenelik (1 / 1" THIN_SP_UTF8 "000)");
+            case uMENEL: return QString("Micro-TestMenelik (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
             case ruffs: return QString("Ten Nano-TestMenelik (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
             default: return QString("???");
         }
@@ -98,9 +98,9 @@ qint64 BitcoinUnits::factor(int unit)
 {
     switch(unit)
     {
-    case MENIL:  return 100000000;
-    case mMENIL: return 100000;
-    case uMENIL: return 100;
+    case MENEL:  return 100000000;
+    case mMENEL: return 100000;
+    case uMENEL: return 100;
     case ruffs: return 1;
     default:   return 100000000;
     }
@@ -110,9 +110,9 @@ int BitcoinUnits::decimals(int unit)
 {
     switch(unit)
     {
-    case MENIL: return 8;
-    case mMENIL: return 5;
-    case uMENIL: return 2;
+    case MENEL: return 8;
+    case mMENEL: return 5;
+    case uMENEL: return 2;
     case ruffs: return 0;
     default: return 0;
     }

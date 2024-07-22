@@ -58,9 +58,9 @@ public:
      */
     enum Unit
     {
-        MENIL,
-        mMENIL,
-        uMENIL,
+        MENEL,
+        mMENEL,
+        uMENEL,
         ruffs
     };
 

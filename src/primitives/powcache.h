@@ -2,8 +2,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MENIL_POWCACHE_H
-#define MENIL_POWCACHE_H
+#ifndef MENEL_POWCACHE_H
+#define MENEL_POWCACHE_H
 
 #include <uint256.h>
 #include <sync.h>
@@ -77,4 +77,4 @@ class CPowCache : public unordered_lru_cache<uint256, uint256, std::hash<uint256
         }
 };
 
-#endif // MENIL_POWCACHE_H
+#endif // MENEL_POWCACHE_H

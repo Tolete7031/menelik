@@ -1,8 +1,8 @@
 #! /bin/sh
 # Configuration validation subroutine script.
-#   Copyright 1992-2018 Free Software Foundation, Inc.
+#   Copyright 1992-2024 Free Software Foundation, Inc.
 
-timestamp='2018-07-03'
+timestamp='2024-07-15'
 
 # This file is free software; you can redistribute it and/or modify it
 # under the terms of the GNU General Public License as published by
@@ -134,7 +134,7 @@ case $1 in
 			| linux-newlib* | linux-musl* | linux-uclibc* | uclinux-uclibc* \
 			| uclinux-gnu* | kfreebsd*-gnu* | knetbsd*-gnu* | netbsd*-gnu* \
 			| netbsd*-eabi* | kopensolaris*-gnu* | cloudabi*-eabi* \
-			| storm-chaos* | os2-emx* | menilk-nova*)
+			| storm-chaos* | os2-emx* | menelk-nova*)
 				basic_machine=$field1
 				os=$maybe_os
 				;;
@@ -1372,7 +1372,7 @@ case $os in
 	     | openstep* | oskit* | conix* | pw32* | nonstopux* \
 	     | storm-chaos* | tops10* | tenex* | tops20* | its* \
 	     | os2* | vos* | palmos* | uclinux* | nucleus* \
-	     | morphos* | superux* | menilk* | windiss* \
+	     | morphos* | superux* | menelk* | windiss* \
 	     | powermax* | dnix* | nx6 | nx7 | sei* | dragonfly* \
 	     | skyos* | haiku* | rdos* | toppers* | drops* | es* \
 	     | onefs* | tirtos* | phoenix* | fuchsia* | redox* | bme* \
@@ -1455,7 +1455,7 @@ case $os in
 		os=sysv
 		;;
 	nova*)
-		os=menilk-nova
+		os=menelk-nova
 		;;
 	ns2)
 		os=nextstep2

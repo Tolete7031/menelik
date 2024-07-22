@@ -27,15 +27,15 @@ WGETCMD="$(command -v wget || echo '')"
 IPFSCMD="$(command -v ipfs || echo '')"
 CURLCMD="$(command -v curl || echo '')"
 
-# fetch methods can be disabled with MENIL_DISABLE_SOMETHING=1
-MENIL_DISABLE_WGET="${MENIL_DISABLE_WGET:-}"
-#MENIL_DISABLE_IPFS="${MENIL_DISABLE_IPFS:-}"
-MENIL_DISABLE_CURL="${MENIL_DISABLE_CURL:-}"
+# fetch methods can be disabled with MENEL_DISABLE_SOMETHING=1
+MENEL_DISABLE_WGET="${MENEL_DISABLE_WGET:-}"
+#MENEL_DISABLE_IPFS="${MENEL_DISABLE_IPFS:-}"
+MENEL_DISABLE_CURL="${MENEL_DISABLE_CURL:-}"
 
 LOCKFILE=/tmp/fetch_params.lock
 
 fetch_wget() {
-    if [ -z "$WGETCMD" ] || ! [ -z "$MENIL_DISABLE_WGET" ]; then
+    if [ -z "$WGETCMD" ] || ! [ -z "$MENEL_DISABLE_WGET" ]; then
         return 1
     fi
 
@@ -53,7 +53,7 @@ EOF
 }
 
 #fetch_ipfs() {
-#    if [ -z "$IPFSCMD" ] || ! [ -z "$MENIL_DISABLE_IPFS" ]; then
+#    if [ -z "$IPFSCMD" ] || ! [ -z "$MENEL_DISABLE_IPFS" ]; then
 #        return 1
 #    fi
 
@@ -66,7 +66,7 @@ EOF
 #}
 
 fetch_curl() {
-    if [ -z "$CURLCMD" ] || ! [ -z "$MENIL_DISABLE_CURL" ]; then
+    if [ -z "$CURLCMD" ] || ! [ -z "$MENEL_DISABLE_CURL" ]; then
         return 1
     fi
 
@@ -176,7 +176,7 @@ main() {
     || exit_locked_error
 
     cat <<EOF
-MENIL - fetch-params.sh
+MENEL - fetch-params.sh
 
 This script will fetch the Menelik SNARK parameters and verify their
 integrity with sha256sum.

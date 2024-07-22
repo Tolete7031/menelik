@@ -316,8 +316,8 @@ void CCoinJoin::InitStandardDenominations()
         is convertible to another.
 
         For example:
-        100MENIL+1000 == (10MENIL+100)*10
-        10RM+10000 == (1MENIL+1000)*10
+        100MENEL+1000 == (10MENEL+100)*10
+        10RM+10000 == (1MENEL+1000)*10
     */
     /* Disabled
     vecStandardDenominations.push_back( (100      * COIN)+100000 );

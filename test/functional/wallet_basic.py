@@ -179,7 +179,7 @@ class WalletTest(BitcoinTestFramework):
         spent_0 = {"txid": node0utxos[0]["txid"], "vout": node0utxos[0]["vout"]}
         assert_raises_rpc_error(-8, "Invalid parameter, expected unspent output", self.nodes[0].lockunspent, False, [spent_0])
 
-        # Send 100 MENIL normal
+        # Send 100 MENEL normal
         address = self.nodes[0].getnewaddress("test")
         fee_per_byte = Decimal('0.00001') / 1000
         self.nodes[2].settxfee(fee_per_byte * 1000)
@@ -464,9 +464,9 @@ class WalletTest(BitcoinTestFramework):
         assert_equal(total_txs, len(self.nodes[0].listtransactions("*",99999)))
 
         # Test getaddressinfo. Note that these addresses are taken from disablewallet.py
-        assert_raises_rpc_error(-5, "Invalid address", self.nodes[0].getaddressinfo, "3J98t1WpEZ73CNmQviecrnyiWrnqRhWNLy")
-        address_info = self.nodes[0].getaddressinfo("yjQ5gLvGMenilq1cwc4kePLCrzQ8GVCh9Gaz")
-        assert_equal(address_info['address'], "yjQ5gLvGMenilq1cwc4kePLCrzQ8GVCh9Gaz")
+        assert_raises_rpc_error(-5, "Invalid address", self.nodes[0].getaddressinfo, "MAQfLvt7ietemtHQ1ok51y7PBm9iGQWpoC")
+        address_info = self.nodes[0].getaddressinfo("MH1hLf43cSZBCahgXzScG6Yn9vrroy2qkE")
+        assert_equal(address_info['address'], "MH1hLf43cSZBCahgXzScG6Yn9vrroy2qkE")
         assert_equal(address_info["scriptPubKey"], "76a914fd2b4d101724a76374fccbc5b6df7670a75d7cd088ac")
         assert not address_info["ismine"]
         assert not address_info["iswatchonly"]

@@ -135,7 +135,7 @@ void SendCoinsEntry::futureToggleChanged() {
     bool isFuture = ui->futureCb->isChecked();
     if(isFuture) {
         char feeDisplay[18];
-        sprintf(feeDisplay, "%d MENIL", getFutureFees());
+        sprintf(feeDisplay, "%d MENEL", getFutureFees());
         ui->feeDisplay->setText(feeDisplay);
     }
     ui->maturityLb->setVisible(isFuture);

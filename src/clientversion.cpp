@@ -45,7 +45,7 @@ const std::string CLIENT_NAME("Menelik Core");
 #define GIT_ARCHIVE 1
 #ifdef GIT_ARCHIVE
 #define GIT_COMMIT_ID "1de001dc3da6495956b49b9b3be6ec1e8249a6b0"
-#define GIT_COMMIT_DATE "Tue, 6 Jun 2023 07:14:51 -0700"
+#define GIT_COMMIT_DATE "Tue, 15 Juillet 2024 07:14:51 -0700"
 #endif
 
 #define BUILD_DESC_WITH_SUFFIX(maj, min, rev, build, suffix) \
