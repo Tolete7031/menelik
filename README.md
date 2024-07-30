@@ -20,6 +20,20 @@ These additional features open up the power and ease of use of Menelik’s featu
 
 It is one of our goals to not only innovate ideas for Menelik but to contribute back to the general crypto community with open-source features that anybody can use to help their Blockchain projects succeed.
 
+# Menelik Coin
+
+## Resources
+
+- WEB: [https://menelik.fun](https://menelik.fun)
+- DOCS: [https://docs.menelik.fun](https://docs.menelik.fun)
+- WHITEPAPER: [MENEL_Whitepaper_V1-pre.pdf](https://menelik.fun/MENEL_Whitepaper_V1-pre.pdf)
+- EXPLORER: [https://explorer.menelik.fun](https://explorer.menelik.fun)
+- GITHUB: [https://github.com/MenelikCoin/menelik](https://github.com/MenelikCoin/menelik)
+- DISCORD: [https://discord.gg/XemazgMZRZ](https://discord.gg/XemazgMZRZ)
+- TWITTER: [https://x.com/menelikcoin](https://x.com/menelikcoin)
+- ROADMAP: [https://roadmap.menelik.fun](https://roadmap.menelik.fun)
+
+
 
 License
 -------
