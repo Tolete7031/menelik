@@ -25,7 +25,7 @@ packages:
 - "rename"
 - "ccache"
 remotes:
-- "url": "https://github.com/raptor3um/menelik.git"
+- "url": "https://github.com/MenelikCoin/menelik.git"
   "dir": "menelik"
 files: []
 script: |
