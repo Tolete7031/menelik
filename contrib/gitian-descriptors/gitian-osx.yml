@@ -30,7 +30,7 @@ packages:
 - "fonts-tuffy"
 - "ccache"
 remotes:
-- "url": "https://github.com/raptor3um/menelik.git"
+- "url": "https://github.com/MenelikCoin/menelik.git"
   "dir": "menelik"
 files:
 - "MacOSX10.11.sdk.tar.gz"
