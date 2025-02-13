@@ -35,7 +35,7 @@ Check out the source code in the following directory hierarchy.
 	git clone https://github.com/raptor3um/gitian.sigs.git
 	git clone https://github.com/raptor3um/menelik-detached-sigs.git
 	git clone https://github.com/devrandom/gitian-builder.git
-	git clone https://github.com/raptor3um/menelik.git
+	https://github.com/MenelikCoin/menelik.git
 
 ### Menelik Core maintainers/release engineers, suggestion for writing release notes
 
